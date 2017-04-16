@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-mime/mime/mime.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-mime/node_modules/mime/mime.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-mime">npmtest-mime (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-mime/mime/mime.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-mime/node_modules/mime/mime.js</span></h1>
     <h2>
         
         Statements: <span class="metric">68.57% <small>(24 / 35)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-mime/mime/</a> &#187; mime.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-mime/node_modules/mime/</a> » mime.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -456,8 +454,8 @@ Mime.prototype.define = function (map) {
   for (var type in map) {
     var exts = map[type];
     for (var i = 0; i &lt; exts.length; i++) {
-      <span class="missing-if-branch" title="if path not taken" >I</span>if (process.env.DEBUG_MIME &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >this.types[exts])</span> {
-<span class="cstat-no" title="statement not covered" >        console.warn(this._loading.replace(/.*\//, ''), 'changes "' + exts[i] + '" extension type from ' +</span>
+      <span class="missing-if-branch" title="if path not taken">I</span>if (process.env.DEBUG_MIME &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered">this.types[exts])</span> {
+<span class="cstat-no" title="statement not covered">        console.warn(this._loading.replace(/.*\//, ''), 'changes "' + exts[i] + '" extension type from ' +</span>
           this.types[exts] + ' to ' + type);
       }
 &nbsp;
@@ -465,7 +463,7 @@ Mime.prototype.define = function (map) {
     }
 &nbsp;
     // Default extension is the first one we encounter
-    <span class="missing-if-branch" title="else path not taken" >E</span>if (!this.extensions[type]) {
+    <span class="missing-if-branch" title="else path not taken">E</span>if (!this.extensions[type]) {
       this.extensions[type] = exts[0];
     }
   }
@@ -479,22 +477,22 @@ Mime.prototype.define = function (map) {
  *
  * @param file (String) path of file to load.
  */
-Mime.prototype.load = <span class="fstat-no" title="function not covered" >function(file) {</span>
-<span class="cstat-no" title="statement not covered" >  this._loading = file;</span>
+Mime.prototype.load = <span class="fstat-no" title="function not covered">function(file) {</span>
+<span class="cstat-no" title="statement not covered">  this._loading = file;</span>
   // Read file and split into lines
-<span class="cstat-no" title="statement not covered" >  var map = {},</span>
+<span class="cstat-no" title="statement not covered">  var map = {},</span>
       content = fs.readFileSync(file, 'ascii'),
       lines = content.split(/[\r\n]+/);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  lines.forEach(<span class="fstat-no" title="function not covered" >function(line) {</span></span>
+<span class="cstat-no" title="statement not covered">  lines.forEach(<span class="fstat-no" title="function not covered">function(line) {</span></span>
     // Clean up whitespace/comments, and split into fields
-<span class="cstat-no" title="statement not covered" >    var fields = line.replace(/\s*#.*|^\s*|\s*$/g, '').split(/\s+/);</span>
-<span class="cstat-no" title="statement not covered" >    map[fields.shift()] = fields;</span>
+<span class="cstat-no" title="statement not covered">    var fields = line.replace(/\s*#.*|^\s*|\s*$/g, '').split(/\s+/);</span>
+<span class="cstat-no" title="statement not covered">    map[fields.shift()] = fields;</span>
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.define(map);</span>
+<span class="cstat-no" title="statement not covered">  this.define(map);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this._loading = null;</span>
+<span class="cstat-no" title="statement not covered">  this._loading = null;</span>
 };
 &nbsp;
 /**
@@ -503,15 +501,15 @@ Mime.prototype.load = <span class="fstat-no" title="function not covered" >funct
 Mime.prototype.lookup = function(path, fallback) {
   var ext = path.replace(/.*[\.\/\\]/, '').toLowerCase();
 &nbsp;
-  return this.types[ext] || <span class="branch-1 cbranch-no" title="branch not covered" >fallback </span>|| <span class="branch-2 cbranch-no" title="branch not covered" >this.default_type;</span>
+  return this.types[ext] || <span class="branch-1 cbranch-no" title="branch not covered">fallback </span>|| <span class="branch-2 cbranch-no" title="branch not covered">this.default_type;</span>
 };
 &nbsp;
 /**
  * Return file extension associated with a mime type
  */
-Mime.prototype.extension = <span class="fstat-no" title="function not covered" >function(mimeType) {</span>
-<span class="cstat-no" title="statement not covered" >  var type = mimeType.match(/^\s*([^;\s]*)(?:;|\s|$)/)[1].toLowerCase();</span>
-<span class="cstat-no" title="statement not covered" >  return this.extensions[type];</span>
+Mime.prototype.extension = <span class="fstat-no" title="function not covered">function(mimeType) {</span>
+<span class="cstat-no" title="statement not covered">  var type = mimeType.match(/^\s*([^;\s]*)(?:;|\s|$)/)[1].toLowerCase();</span>
+<span class="cstat-no" title="statement not covered">  return this.extensions[type];</span>
 };
 &nbsp;
 // Default instance
@@ -533,19 +531,20 @@ mime.Mime = Mime;
  * Lookup a charset based on mime type.
  */
 mime.charsets = {
-  lookup: <span class="fstat-no" title="function not covered" >function(mimeType, fallback) {</span>
+  lookup: <span class="fstat-no" title="function not covered">function(mimeType, fallback) {</span>
     // Assume text types are utf8
-<span class="cstat-no" title="statement not covered" >    return (/^text\//).test(mimeType) ? 'UTF-8' : fallback;</span>
+<span class="cstat-no" title="statement not covered">    return (/^text\//).test(mimeType) ? 'UTF-8' : fallback;</span>
   }
 };
 &nbsp;
 module.exports = mime;
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 07:30:26 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Sun Apr 16 2017 08:06:24 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
