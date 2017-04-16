@@ -1,7 +1,7 @@
 # test coverage for  [mime (v1.3.4)](https://github.com/broofa/node-mime)  [![npm package](https://img.shields.io/npm/v/npmtest-mime.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-mime) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-mime.svg)](https://travis-ci.org/npmtest/node-npmtest-mime)
 #### A comprehensive library for mime-type mapping
 
-[![NPM](https://nodei.co/npm/mime.png?downloads=true)](https://www.npmjs.com/package/mime)
+[![NPM](https://nodei.co/npm/mime.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/mime)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-mime/tree/alpha)|
 |--:|:--|
@@ -9,11 +9,11 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-mime/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-mime/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-mime/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-mime/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-mime/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-mime/build/coverage.html/index.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-mime/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-mime/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-mime/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-mime%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-mime/build/test-report.html)
+[![test-report](https://npmtest.github.io/node-npmtest-mime/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-mime/build/test-report.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-mime/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-mime%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-mime/build/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-mime/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-mime/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-mime/build/screenCapture.npmPackageListing.svg)
 
@@ -28,7 +28,6 @@
 {
     "author": {
         "name": "Robert Kieffer",
-        "email": "robert@broofa.com",
         "url": "http://github.com/broofa"
     },
     "bin": {
@@ -40,7 +39,6 @@
     "contributors": [
         {
             "name": "Benjamin Thomas",
-            "email": "benjamin@benjaminthomas.org",
             "url": "http://github.com/bentomas"
         }
     ],
@@ -69,17 +67,14 @@
     "main": "mime.js",
     "maintainers": [
         {
-            "name": "broofa",
-            "email": "robert@broofa.com"
+            "name": "broofa"
         },
         {
-            "name": "bentomas",
-            "email": "benjamin@benjaminthomas.org"
+            "name": "bentomas"
         }
     ],
     "name": "mime",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "url": "git+https://github.com/broofa/node-mime.git",
         "type": "git"
