@@ -1,5 +1,5 @@
 <html lang="en"><head>
-    <title>Code coverage report for node-npmtest-mime/node_modules/mime/mime.js</title>
+    <title>Code coverage report for node-npmtest-mime/node_modules/mime/cli.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,23 +192,23 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-mime">npmtest-mime (v0.0.3)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-mime/node_modules/mime/mime.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-mime/node_modules/mime/cli.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">68.57% <small>(24 / 35)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">75% <small>(3 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">36.36% <small>(4 / 11)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">42.86% <small>(3 / 7)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">68.57% <small>(24 / 35)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">75% <small>(3 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-mime/node_modules/mime/</a> » mime.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-mime/node_modules/mime/</a> » cli.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
@@ -221,329 +221,29 @@
 7
 8
 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
+10</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">785</span>
-<span class="cline-any cline-yes">785</span>
-<span class="cline-any cline-yes">1014</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1014</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">785</span>
-<span class="cline-any cline-yes">785</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var path = require('path');
-var fs = require('fs');
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">//#!/usr/bin/env node
 &nbsp;
-function Mime() {
-  // Map of extension -&gt; mime type
-  this.types = Object.create(null);
+var mime = require('./mime.js');
+var file = process.argv[2];
+var type = mime.lookup(file);
 &nbsp;
-  // Map of mime type -&gt; extension
-  this.extensions = Object.create(null);
-}
+<span class="cstat-no" title="statement not covered">process.stdout.write(type + '\n');</span>
 &nbsp;
-/**
- * Define mimetype -&gt; extension mappings.  Each key is a mime-type that maps
- * to an array of extensions associated with the type.  The first extension is
- * used as the default extension for the type.
- *
- * e.g. mime.define({'audio/ogg', ['oga', 'ogg', 'spx']});
- *
- * @param map (Object) type definitions
- */
-Mime.prototype.define = function (map) {
-  for (var type in map) {
-    var exts = map[type];
-    for (var i = 0; i &lt; exts.length; i++) {
-      <span class="missing-if-branch" title="if path not taken">I</span>if (process.env.DEBUG_MIME &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered">this.types[exts])</span> {
-<span class="cstat-no" title="statement not covered">        console.warn(this._loading.replace(/.*\//, ''), 'changes "' + exts[i] + '" extension type from ' +</span>
-          this.types[exts] + ' to ' + type);
-      }
-&nbsp;
-      this.types[exts[i]] = type;
-    }
-&nbsp;
-    // Default extension is the first one we encounter
-    <span class="missing-if-branch" title="else path not taken">E</span>if (!this.extensions[type]) {
-      this.extensions[type] = exts[0];
-    }
-  }
-};
-&nbsp;
-/**
- * Load an Apache2-style ".types" file
- *
- * This may be called multiple times (it's expected).  Where files declare
- * overlapping types/extensions, the last file wins.
- *
- * @param file (String) path of file to load.
- */
-Mime.prototype.load = <span class="fstat-no" title="function not covered">function(file) {</span>
-<span class="cstat-no" title="statement not covered">  this._loading = file;</span>
-  // Read file and split into lines
-<span class="cstat-no" title="statement not covered">  var map = {},</span>
-      content = fs.readFileSync(file, 'ascii'),
-      lines = content.split(/[\r\n]+/);
-&nbsp;
-<span class="cstat-no" title="statement not covered">  lines.forEach(<span class="fstat-no" title="function not covered">function(line) {</span></span>
-    // Clean up whitespace/comments, and split into fields
-<span class="cstat-no" title="statement not covered">    var fields = line.replace(/\s*#.*|^\s*|\s*$/g, '').split(/\s+/);</span>
-<span class="cstat-no" title="statement not covered">    map[fields.shift()] = fields;</span>
-  });
-&nbsp;
-<span class="cstat-no" title="statement not covered">  this.define(map);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered">  this._loading = null;</span>
-};
-&nbsp;
-/**
- * Lookup a mime type based on extension
- */
-Mime.prototype.lookup = function(path, fallback) {
-  var ext = path.replace(/.*[\.\/\\]/, '').toLowerCase();
-&nbsp;
-  return this.types[ext] || <span class="branch-1 cbranch-no" title="branch not covered">fallback </span>|| <span class="branch-2 cbranch-no" title="branch not covered">this.default_type;</span>
-};
-&nbsp;
-/**
- * Return file extension associated with a mime type
- */
-Mime.prototype.extension = <span class="fstat-no" title="function not covered">function(mimeType) {</span>
-<span class="cstat-no" title="statement not covered">  var type = mimeType.match(/^\s*([^;\s]*)(?:;|\s|$)/)[1].toLowerCase();</span>
-<span class="cstat-no" title="statement not covered">  return this.extensions[type];</span>
-};
-&nbsp;
-// Default instance
-var mime = new Mime();
-&nbsp;
-// Define built-in types
-mime.define(require('./types.json'));
-&nbsp;
-// Default type
-mime.default_type = mime.lookup('bin');
-&nbsp;
-//
-// Additional API specific to the default instance
-//
-&nbsp;
-mime.Mime = Mime;
-&nbsp;
-/**
- * Lookup a charset based on mime type.
- */
-mime.charsets = {
-  lookup: <span class="fstat-no" title="function not covered">function(mimeType, fallback) {</span>
-    // Assume text types are utf8
-<span class="cstat-no" title="statement not covered">    return (/^text\//).test(mimeType) ? 'UTF-8' : fallback;</span>
-  }
-};
-&nbsp;
-module.exports = mime;
 &nbsp;
 &nbsp;</pre></td></tr>
 </tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 20:08:16 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 25 2017 21:49:13 GMT+0000 (UTC)</div>
 </div>
 
 
