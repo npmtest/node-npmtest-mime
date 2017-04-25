@@ -1,6 +1,6 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "description": "#### test coverage for  [mime (v1.3.4)](https://github.com/broofa/node-mime)  [![npm package](https://img.shields.io/npm/v/npmtest-mime.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-mime) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-mime.svg)](https://travis-ci.org/npmtest/node-npmtest-mime)",
+    "description": "#### basic test coverage for  [mime (v1.3.4)](https://github.com/broofa/node-mime)  [![npm package](https://img.shields.io/npm/v/npmtest-mime.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-mime) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-mime.svg)](https://travis-ci.org/npmtest/node-npmtest-mime)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "mime": "*",
@@ -36,5 +36,5 @@
         "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
         "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
-    "version": "0.0.3"
+    "version": "2017.4.25"
 }
